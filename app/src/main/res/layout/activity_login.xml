@@ -2,50 +2,71 @@
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:background="#B3E5FC"
+        android:orientation="vertical"
+        android:padding="32dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <ImageView
             android:id="@+id/logoApplication"
             android:layout_width="match_parent"
-            android:layout_height="275dp"
-            android:layout_marginBottom="80dp"
+            android:layout_height="203dp"
+            android:layout_marginBottom="50dp"
             app:srcCompat="@drawable/logo_aplicacion" />
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress"
+            android:id="@+id/txtMail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
             android:ems="10"
-            android:inputType="textEmailAddress" />
+            android:fontFamily="@font/noto_sans"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textAlignment="textStart"
+            android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/txtPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPassword" />
+            android:fontFamily="@font/noto_sans"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textAlignment="textStart"
+            android:textStyle="bold"
+            android:typeface="normal" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/rounder_button_one"
-            android:textColor="@drawable/txt_properties"
-            android:fontFamily="@font/noto_sans"
             android:layout_margin="25dp"
-            android:textStyle="bold"
-            android:text="LOGIN" />
+            android:background="@drawable/rounder_button_one"
+            android:fontFamily="@font/noto_sans"
+            android:text="LOGIN"
+            android:textColor="@drawable/txt_properties"
+            android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/registerBack"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:clickable="true"
+            android:fontFamily="@font/noto_sans"
+            android:text="No account yet? Create one"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#455A64"
+            android:textStyle="bold" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
